@@ -37,11 +37,17 @@ class CountdownTimer {
 
 // function for update HTML out of class
 function updateTimer(days, hours, mins, secs) { 
+    if (secs < 0) { //проверка на "прошлое"
+        daysRef.textContent = '00';
+            hoursRef.textContent = '00';
+            minsRef.textContent = '00';
+            secsRef.textContent = '00';
+    } else {
             daysRef.textContent = days;
             hoursRef.textContent = hours;
             minsRef.textContent = mins;
             secsRef.textContent = secs;
-}
+}}
 
 // new copy of class
 const newYearTimer = new CountdownTimer({
