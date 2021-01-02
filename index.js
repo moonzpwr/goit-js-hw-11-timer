@@ -52,7 +52,7 @@ function updateTimer(days, hours, mins, secs) {
 // new copy of class
 const newYearTimer = new CountdownTimer({
   selector: '#timer-1',
-    targetDate: new Date('Jan 01, 2021'),
+    targetDate: new Date('Jan 01, 2022'),
     onTick: updateTimer
 });
 
